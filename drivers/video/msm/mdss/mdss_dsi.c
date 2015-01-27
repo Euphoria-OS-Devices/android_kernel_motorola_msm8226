@@ -1030,6 +1030,7 @@ static int mdss_dsi_event_handler(struct mdss_panel_data *pdata,
 		if (!use_fb_notifier)
 			state_notifier_call_chain(STATE_NOTIFIER_ACTIVE, NULL);
 #endif
+		pdata->panel_info.cont_splash_esd_rdy = true;
 		break;
 	case MDSS_EVENT_BLANK:
 		if (ctrl_pdata->off_cmds.link_state == DSI_HS_MODE)
