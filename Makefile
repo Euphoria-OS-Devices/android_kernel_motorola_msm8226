@@ -351,8 +351,7 @@ PERL		= perl
 CHECK		= sparse
 
 CHECKFLAGS     := -D__linux__ -Dlinux -D__STDC__ -Dunix -D__unix__ \
-
-                  -Wbitwise -Wno-return-void $(CF)
+-Wbitwise -Wno-return-void $(CF)
 OPTIMIZATION_FLAGS = -marm -mtune=cortex-a7 -mfpu=neon-vfpv4 \
                      -ffast-math -fsingle-precision-constant \
                      -fgcse-lm -fgcse-sm -fsched-spec-load -fforce-addr \
